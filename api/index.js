@@ -34,6 +34,10 @@ app.use("/api/auth",authRoute);
 app.use("/api/hotels",hotelsRoute);
 app.use("/api/rooms",roomsRoute);
 app.use("/api/users",usersRoute);
+app.use("/",(req,res)=>{
+    res.send("server is running")
+    console.log("server is running");
+})
 
 //error handling middleware
 app.use((err,req,res,next)=>{
