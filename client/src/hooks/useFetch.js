@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-axios.defaults.baseURL = "http://localhost:8000/api/";
+axios.defaults.baseURL = "https://hotel-booking-mern-qvza.onrender.com/";
 export const useFetch = (url) =>{
     const [data,setData] =useState([])
     const [loading,setLoading] = useState(true)
