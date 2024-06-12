@@ -3,7 +3,7 @@ import { AuthContext } from '../../App'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom';
 
-axios.defaults.baseURL = "http://localhost:8000/api/";
+axios.defaults.baseURL = "https://hotel-booking-mern-qvza.onrender.com/api/";
 const Login = () => {
 
     const [credentials,setCredentials] = useState({
